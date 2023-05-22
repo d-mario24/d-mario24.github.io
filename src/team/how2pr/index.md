@@ -33,30 +33,18 @@
 ### STEP 2 - create branch
 ``` bash
 $ pwd
-~/code/oss-cashmallow.github.io
+~/code/etl
 
 $ git pull
 
-$ git describe --tags
-v0.9.6
-
+# 버전 규칙은 https://semver.org/ 를 따름
 $ git branch v0.9.7/how2write-code-with-PR
 $ git checkout v0.9.7/how2write-code-with-PR
-
-# 버전 규칙은 https://semver.org/ 를 따름ㅎ
-$ git branch --show-current
-v0.9.7/how2write-code-with-PR
 ```
 
 ### STEP 3 - writing todo
 ``` bash
-$ perl -p -i -e '$.==3 and print "### 0.9.7\n- [ ] The Beginning of Collaboration\n\n"' ChangeLog.md
-
-$ head -n 5 ChangeLog.md
-# ChangeLog
-
-### 0.9.7
-- [ ] The Beginning of Collaboration
+$ vi how2write-code-with-PR.md
 ```
 
 ### STEP 4 - create PR to signal the start of coding
@@ -68,7 +56,7 @@ $ git status
 커밋할 변경 사항:
 	수정함:        ChangeLog.md
 
-$ git commit -m "start write - tiger coding 101"
+$ git commit -m "linving for today"
 
 $ git push --set-upstream origin v0.9.7/how2write-code-with-PR
 remote: Create a pull request for 'v0.9.7/how2write-code-with-PR' on GitHub by visiting:
