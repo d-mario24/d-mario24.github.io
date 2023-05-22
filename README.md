@@ -14,6 +14,12 @@
 1. git clone https://github.com/oss-cashmallow/oss-cashmallow.github.io.git
 2. edit with [vscode](https://code.visualstudio.com/)
 3. install
+- ubuntu
+```
+sudo apt install nodejs npm
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
+- mac
 ``` bash
 brew install node
 brew install pnpm
